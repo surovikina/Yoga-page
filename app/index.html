@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script src="text/javascript"></script>
+    <script type="js/jquery.validate.js">
     $(function(){
       $('.button').hover(function(){
         $(this).parent().siblings('.value').css('background-color','#475bf1');
@@ -36,7 +37,7 @@
             <li class="left-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           </ul>
           <div class="logo">
-            <a><img src="img/logo-yoga.png" class= "logo__main--nav"alt="yoga"> </a>
+            <a><img src="img/logo-yoga.png" class= "logo__main--nav" alt="yoga"> </a>
           </div>
           <ul class="header-menu__right">
             <li class="right-item"><a class="nav-link" href="#our-classes">Blog</a></li>
@@ -49,12 +50,13 @@
     <section class="slider section-overlay" style="background-image: url(img/slider.jpg);">
       <div class="container">
         <div class="form-container">
+
           <form id="main-form" action="/" method="post">
             <h3 class="form-caption">Trial Class</h3>
-            <input type="text" name="" value="" placeholder="Enter your name" required>
-            <input type="text" name="" value="" placeholder="Enter your phone" required>
+            <input type="text" name="for-name" placeholder="Enter your name" required minlength="2" class="form-input">
+            <input type="tel" name="fortell" placeholder="Enter your phone" required class="form-input" pattern="[0-9-()+]{3,20}">
             <div class="select-wrap">
-              <select class="list-class" name="">
+              <select class="list-class" name="y-classe">
                 <option disabled selected>Chose your class</option>
                 <option value="">Yoga for health</option>
                 <option value="">Yoga for lose weight</option>
@@ -64,6 +66,7 @@
             </div>
             <button class="btn" type="submit">Try it</button>
           </form>
+
         </div>
         <div class="main-caption">
           <h1>Just balance <br> your mind & body</h1>
@@ -81,7 +84,7 @@
         <ul class="class-list">
           <li class="class-item">
             <div class="class-photo">
-              <img src="img/class/1.jpg" alt="">
+              <img src="img/class/1.jpg" alt="foto of class for yoga">
             </div>
             <div class="class-description">
               <div class="class-title">Yoga for health</div>
@@ -91,7 +94,7 @@
           </li>
           <li class="class-item">
             <div class="class-photo">
-              <img src="img/class/3.jpg" alt="">
+              <img src="img/class/3.jpg" alt="foto of class for yoga">
             </div>
             <div class="class-description">
               <div class="class-title">Yoga for lose weight</div>
@@ -101,7 +104,7 @@
           </li>
           <li class="class-item">
             <div class="class-photo">
-              <img src="img/class/2.jpg" alt="">
+              <img src="img/class/2.jpg" alt="foto of class for yoga">
             </div>
             <div class="class-description">
               <div class="class-title">Yoga for children</div>
@@ -111,7 +114,7 @@
           </li>
           <li class="class-item">
             <div class="class-photo">
-              <img src="img/class/4.jpg" alt="">
+              <img src="img/class/4.jpg" alt="foto of class for yoga">
             </div>
             <div class="class-description">
               <div class="class-title">Yoga for elderly</div>
@@ -126,79 +129,79 @@
     <section class="gallery">
       <ul class="gallery-list">
         <li class="gallery-photo">
-           <img src="img/gallery/1.jpg" alt="">
+           <img src="img/gallery/1.jpg" alt="yoga classes">
            <a href="#">
              <span class="circle">
-               <p class="magnifying">
-                 <img src="img/magnifying-glass.svg" alt="">
-              </p>
+               <span class="magnifying">
+                 <img src="img/magnifying-glass.svg">
+              </span>
              </span>
            </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/2.jpg" alt="">
+          <img src="img/gallery/2.jpg" alt="yoga classes">
           <a href="#">
             <span class="circle">
-              <p class="magnifying">
-                <img src="img/magnifying-glass.svg" alt="">
-             </p>
+              <span class="magnifying">
+                <img src="img/magnifying-glass.svg">
+             </span>
             </span>
           </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/3.jpg" alt="">
+          <img src="img/gallery/3.jpg" alt="yoga classes">
           <a href="#"> <span class="circle">
-             <p class="magnifying">
-               <img src="img/magnifying-glass.svg" alt="">
-            </p>
+             <span class="magnifying">
+               <img src="img/magnifying-glass.svg" >
+            </span>
            </span></a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/4.jpg" alt="">
+          <img src="img/gallery/4.jpg" alt="yoga classes">
           <a href="#">
             <span class="circle">
-              <p class="magnifying">
-                <img src="img/magnifying-glass.svg" alt="">
-             </p>
+              <span class="magnifying">
+                <img src="img/magnifying-glass.svg">
+             </span>
             </span>
           </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/5.jpg" alt="">
+          <img src="img/gallery/5.jpg" alt="yoga classes">
           <a href="#">
             <span class="circle">
-              <p class="magnifying">
-                <img src="img/magnifying-glass.svg" alt="">
-             </p>
+              <span class="magnifying">
+                <img src="img/magnifying-glass.svg">
+             </span>
             </span>
           </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/6.jpg" alt="">
+          <img src="img/gallery/6.jpg" alt="yoga classes">
           <a href="#">
             <span class="circle">
-              <p class="magnifying">
-                <img src="img/magnifying-glass.svg" alt="">
-             </p>
+              <span class="magnifying">
+                <img src="img/magnifying-glass.svg">
+             </span>
             </span>
           </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/7.jpg" alt="">
+          <img src="img/gallery/7.jpg" alt="yoga classes">
           <a href="#">
             <span class="circle">
-              <p class="magnifying">
-                <img src="img/magnifying-glass.svg" alt="">
-             </p>
+              <span class="magnifying">
+                <img src="img/magnifying-glass.svg">
+             </span>
             </span>
           </a>
         </li>
         <li class="gallery-photo">
-          <img src="img/gallery/8.jpg" alt="">
+          <img src="img/gallery/8.jpg" alt="yoga classes">
           <a href="#"> <span class="circle">
-             <p class="magnifying">
-               <img src="img/magnifying-glass.svg" alt="">
-            </p>
+             <span class="magnifying">
+               <img src="img/magnifying-glass.svg">
+            </span>
            </span></a>
         </li>
       </ul>
@@ -213,7 +216,7 @@
           </div>
         </div>
         <div class="about__slider">
-          <img src="img/about.jpg" alt="">
+          <img src="img/about.jpg" alt="girl doing yoga">
         </div>
       </div>
     </section>
@@ -222,42 +225,42 @@
       <div class="container">
         <div class="features__list">
           <div class="features__item">
-            <img class="features__photo" src="img/feature/1.png" alt="">
+            <img class="features__photo" src="img/feature/1.png">
             <h4 class="features__name">Improved overall <br>health</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/2.png" alt="">
+            <img class="features__photo" src="img/feature/2.png">
             <h4 class="features__name">Increased <br>concentration</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/3.png" alt="">
+            <img class="features__photo" src="img/feature/3.png">
             <h4 class="features__name">Balance<br> your mind</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/4.png" alt="">
+            <img class="features__photo" src="img/feature/4.png">
             <h4 class="features__name">Sleep <br>better</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/5.png" alt="">
+            <img class="features__photo" src="img/feature/5.png">
             <h4 class="features__name">Weicht loss <br>health</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/6.png" alt="">
+            <img class="features__photo" src="img/feature/6.png">
             <h4 class="features__name">Strengthens <br> your bones</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/7.png" alt="">
+            <img class="features__photo" src="img/feature/7.png">
             <h4 class="features__name">Increased <br> flexibility</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
           <div class="features__item">
-            <img class="features__photo" src="img/feature/8.png" alt="">
+            <img class="features__photo" src="img/feature/8.png">
             <h4 class="features__name">Lower blood <br>pressure</h4>
             <p class="features__desk">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
           </div>
@@ -311,7 +314,7 @@
           <div class="bloquote-content">
             <div class="bloquote-content__photo">
               <div class="photo-wrap">
-                <img src="img/t.jpg" alt="">
+                <img src="img/t.jpg" alt="photo of the trainer">
               </div>
             </div>
             <blockquote class="quote">

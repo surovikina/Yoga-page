@@ -380,8 +380,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  max-height: 400px;
-  min-height: 300px;
+  height: 60vh;
 }
 .gallery > .gallery-list > .gallery-photo {
   list-style: none;
@@ -427,6 +426,7 @@ body {
   display: inline-block;
 }
 .gallery > .gallery-list > .gallery-photo > a > .circle > .magnifying {
+  display: block;
   width: 1.25vw;
   margin: 0.88vw;
 }
@@ -907,6 +907,9 @@ body {
   height: inherit;
   background-color: #5363db;
   opacity: 0.8;
+}
+.error {
+  border: 1px solid;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (max-width: 320px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .container {
