@@ -456,14 +456,13 @@ body {
 .section-about-us .container > .about__slider {
   margin-top: 6.51vmax;
   width: 29.69vmax;
-  height: 15.62vmax;
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .section-about-us .container > .about__slider > img {
   width: calc(100% + 3vw);
-  height: auto;
+  height: 100%;
 }
 .features {
   max-height: 100vh;
@@ -909,7 +908,7 @@ body {
   opacity: 0.8;
 }
 .error {
-  border: 1px solid;
+  border: 1px solid red;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (max-width: 320px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .container {
