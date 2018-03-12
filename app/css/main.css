@@ -29,6 +29,18 @@ body {
   position: relative;
   height: inherit;
 }
+@media only screen and (max-width: 1120px) {
+  .container {
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .container {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
 .header {
   position: fixed;
   box-sizing: border-box;
@@ -122,6 +134,17 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 755px) {
+  .slider .container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 755px) {
+  .slider {
+    height: 90vh;
+    margin-bottom: 5vh;
+  }
+}
 .form-container {
   width: 50%;
   margin-right: 0.78vw;
@@ -204,6 +227,11 @@ body {
 .form-container > #main-form > .btn:hover {
   background-color: #475bf1;
 }
+@media only screen and (max-width: 755px) {
+  .form-container #main-form {
+    margin-top: 60px;
+  }
+}
 .main-caption {
   flex-basis: 50%;
   color: #fff;
@@ -216,12 +244,31 @@ body {
   margin-top: -5.62vh;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 755px) {
+  .main-caption h1 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 10px;
+  }
+}
 .main-caption > p {
   font-family: "Freestyle Script";
   font-size: 5vh;
   line-height: 6vh;
   margin: 0;
   margin-top: 5.62vh;
+}
+@media only screen and (max-width: 755px) {
+  .main-caption p {
+    margin-top: 30px;
+    font-size: 4.5vh;
+    line-height: 4.8vh;
+  }
+}
+@media only screen and (max-width: 755px) {
+  .main-caption {
+    margin-top: 60px;
+  }
 }
 .our-classes__title {
   display: flex;
@@ -271,6 +318,11 @@ body {
 .class-list > .class-item > .class-photo > img {
   height: 100%;
 }
+@media only screen and (max-width: 1120px) {
+  .class-list > .class-item .class-photo {
+    width: 45%;
+  }
+}
 .class-list > .class-item > .class-description {
   margin-left: 1.56vw;
   width: 14.06vw;
@@ -283,6 +335,12 @@ body {
   margin-top: 2.34vmax;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1145px) {
+  .class-list > .class-item > .class-description .class-title {
+    font-size: 18px;
+    margin-top: 2.34vmax;
+  }
+}
 .class-list > .class-item > .class-description > .class-text {
   margin: 0;
   margin-top: 1.8vmax;
@@ -294,6 +352,24 @@ body {
 .class-list > .class-item > .class-description > .class-type {
   color: #999999;
   font-size: 1.75vh;
+}
+@media only screen and (max-width: 1350px) {
+  .class-list > .class-item .class-description {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .class-list .class-item {
+    width: 500px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .class-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .gallery {
   width: 100%;
@@ -372,6 +448,11 @@ body {
 .section-about-us .container > .about__content > .about__content-wrap > p {
   color: #555555;
 }
+@media only screen and (max-width: 1110px) {
+  .section-about-us .container > .about__content .about__content-wrap {
+    width: 100%;
+  }
+}
 .section-about-us .container > .about__slider {
   margin-top: 6.51vmax;
   width: 29.69vmax;
@@ -429,6 +510,11 @@ body {
   line-height: 1.41vw;
   text-align: center;
   color: #fff;
+}
+@media only screen and (max-width: 1016px) {
+  .features__list .features__item {
+    width: 20.06vw;
+  }
 }
 .prices {
   display: flex;
@@ -504,6 +590,27 @@ body {
 }
 .prices > .price > .included-price > .button:hover {
   background-color: #475bf1;
+}
+@media only screen and (max-width: 1010px) {
+  .prices > .price .included-price {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .prices .price {
+    width: 26.27vw;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .prices {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .price {
+    width: 26.27vw;
+  }
 }
 .bloquotes {
   margin-top: 12.75vh;
@@ -682,6 +789,11 @@ body {
 }
 .page-footer__inner > .page-footer__about > .social-links > li > .social-links__link img:hover {
   filter: brightness(0);
+}
+@media only screen and (max-width: 1110px) {
+  .page-footer__inner .page-footer__about {
+    width: 50%;
+  }
 }
 .page-footer__inner > .page-footer__contact {
   width: 29.68vw;
